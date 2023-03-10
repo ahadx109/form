@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            min-height: 100% !important;
+            height: 100%;
+        }
+        
+        body {
+            background-image: url(form.jpg);
+            color: white;
+        }
+        
+        .main {
+            width: 70%;
+            height: 100%;
+            margin-left: 17%;
+        }
+        
+        .row {
+            width: 100%;
+            padding: 5%;
+        }
+        
+        .label {
+            float: left;
+            width: 40%;
+            padding: 5px;
+            font-size: 20px;
+            display: inline;
+            vertical-align: top;
+        }
+        
+        .input {
+            float: left;
+            width: 48%;
+            font-size: 20px;
+            display: inline;
+            vertical-align: middle;
+        }
+        
+        .input-field {
+            width: 280px;
+            height: 20px;
+            padding: 10px;
+            border: 2px solid cornflowerblue;
+            border-radius: 10px;
+        }
+        
+        .radiobu {
+            width: 280px;
+            height: 40px;
+            padding: 10px;
+            border: 2px solid cornflowerblue;
+            border-radius: 10px;
+        }
+        
+        .bu,
+        .b {
+            float: left;
+            width: 20%;
+            padding: 2%;
+            margin-left: 5%;
+            background-color: white;
+            font-size: 20px;
+            border: 2px solid cornflowerblue;
+        }
+        
+        .row1 {
+            margin-left: 20%;
+            margin-top: 5%;
+        }
+        
+        h1 {
+            text-align: center;
+            color: violet;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+        <form action="">
+            <h1>Bio Data Form</h1>
+            <div class="row">
+                <div class="label">
+                    <label for="">Enter your Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Your Name Here" class="input-field">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="">Enter your Email</label>
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="Your Email Here" class="input-field">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">
+                    <label for="">Enter your Father Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Your Father Name Here" class="input-field">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">
+                    <label for="">Enter your CNIC</label>
+                </div>
+                <div class="input">
+                    <input type="number" placeholder="Your CNIC Here" class="input-field">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">
+                    <label for="">Enter your Department</label>
+                </div>
+                <div class="input">
+                    <select class="dropdown">
+                        <option selected disabled>Enter your Department</option>
+                        <option>IT </option>
+                        <option>HR</option>
+                        <option>MANAGMENT </option>
+                        <option>TRAINER </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">
+                    <label for="">Enter your Gender</label>
+                </div>
+                <div class="input">
+                    <span class="radiobu"> <input type="radio" name="radiob"><label for="">Male</label></span>
+                    <span class="radiobu"> <input type="radio" name="radiob"><label for="">Female</label></span>
+                    <span class="radiobu"> <input type="radio" name="radiob"><label for="">Other</label></span>
+                </div>
+            </div>
+            <div class="row1">
+
+                <input type="button" value="Submit" class="bu">
+
+                <input type="button" value="Reset" class="b">
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html
